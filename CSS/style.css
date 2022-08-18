@@ -18,19 +18,38 @@ body{
         letter-spacing: 0.03em;
     color:var(--text-colour);
     }
+
+/* -------------site config------------- */
 img{
     display: block;
 }
-h1, h2, h3, a, p, ul, li{
+h1, h2, h3, a, p{
 margin-top: 0;
 margin-bottom: 0;
+}
+ul, li{
+margin-top: 0;
+margin-bottom: 0;
+}
+/* ---------------header--------------- */
+.conteiner{
+display: flex;
+weight: 1630px;
 }
 .page-header{
 background-color: var(--header-bcg-color);
 }
-.page-header{
+.page-header>*{
 display: flex;
-align-items: center;
+flex-direction: row;
+justify-content: space-around;
+margin-left: auto;
+margin-right: auto;
+}
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 .site-nav{
 display: flex;
@@ -141,9 +160,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color:var(--titles-text-colour);
 }
-.header-nav{
-    margin-left: auto;
-}
+
 .navigation{
 font-family: 'Roboto';
 font-weight: 500;
@@ -186,6 +203,7 @@ text-align: center; }
 .third-section{
 background-color: var(--thirdsec-bcg-color);
 }
+/* ---------------footer--------------- */
 .page-footer{
     background-color:var(--footer-bcg-color);
     color:var(--footer-bigtext-color);
@@ -207,6 +225,7 @@ background-color: var(--thirdsec-bcg-color);
 .footer-nav-link{
     color: var(--footer-navtext-color);
 }
+/* -----------------portfolio page--------------- */
 .portfolio-hero{
     background-color: var(--header-bcg-color);
 }
