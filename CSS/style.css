@@ -83,6 +83,11 @@ display: flex;
 .logo-first-color{
 color:var(--logo-button-color);
 }
+.border-header {
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(236, 236, 236, 1);
+    border-bottom-style: solid;
+}
 /* --------------------site-main------------- */
 .container{
     width: 1200px;
@@ -95,6 +100,12 @@ color:var(--logo-button-color);
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.about{
+    padding-top: 0;
+}
+.section.about{
+    padding-top: 0;
 }
 .link {
     font-family: 'Roboto';
@@ -122,6 +133,7 @@ color:var(--logo-button-color);
     flex-direction: row;
     align-items: flex-start;
     gap: 30px;
+    flex-basis: calc((100%-90px)/4);
     /* margin-right: auto;
     margin-left: auto; */;
 }
@@ -137,14 +149,17 @@ color:var(--logo-button-color);
     display: flex;
     flex-direction: row;
     gap: 30px;
-
+    flex-basis: calc((100% - 90px) / 4);
 }
 .member-card{
     border: 1px solid color var(--text-colour);
+    background-color: var(--header-bcg-color);
+
 }
 .engaged {
     display: flex;
     gap: 30px;
+    flex-basis: calc((100%-60px)/3);
     background-color: var(--firssecond-bcg-color);
 
 }
@@ -156,7 +171,6 @@ color:var(--logo-button-color);
         text-align: center;
         letter-spacing: 0.03em;
         color:var(--titles-colour);
-        padding-top: 30px;
         padding-bottom: 10px;
 }
 .professions-list{
@@ -165,7 +179,6 @@ color:var(--logo-button-color);
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--text-colour);
-        margin-bottom: 30px;
 }
 .header-links~.link{
 font-family: 'Roboto';
@@ -189,6 +202,8 @@ color:var(--first-text-colour);
 .main-theme{
 background-color:var(--footer-bcg-color);
 text-align: center; 
+padding-top: 200px;
+padding-bottom: 200px;
 }
 
 .visually-hidden{
@@ -223,6 +238,9 @@ text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--logo-button-color);
     color: var(--header-bcg-color);
+    border: 0;
+    padding: 10px 32px;
+    border-radius: 4px;
 }
 
 .button:hover,
@@ -281,7 +299,15 @@ text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+.description-member{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 /* ------------------------footer----------------------- */
+.block{
+    display: inline-block;
+    padding-right: 0;
+}
 .page-footer{
     display: flex;
     flex-direction: column;
@@ -292,10 +318,7 @@ text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.block{
-    display: inline-block;
-    padding-right: 0;
-}
+
 .footer-logo-link{
     font-family: 'Raleway';
     font-weight: 700;
@@ -303,27 +326,22 @@ text-align: center;
     line-height: 1.19;
     color:var(--footer-bigtext-color);
     margin-bottom: 20px;
-
-
 }
 .firm-address{
     font-style: normal;
-
+}
+.footer-links-list>li:not(:last-child){
+margin-bottom: 9px;
 }
 .footer-adress-link{
     color:var(--footer-bigtext-color);
-    margin-bottom: 9px;
 }
 .footer-nav-link{
     color: var(--footer-navtext-color);
-    margin-bottom: 9px;
 }
+
 /* -----------------portfolio page--------------- */
-.border-portfolio-header{
-    border-bottom-width: 1px;
-    border-bottom-color: rgba(236, 236, 236, 1);
-    border-bottom-style: solid;
-}
+
 .portfolio-hero{
     background-color: var(--header-bcg-color);
 }
@@ -347,12 +365,17 @@ text-align: center;
     border-bottom-color:rgba(238, 238, 238, 1);
     border-bottom-style: solid;
 }
-.portfolio-button{
+.portfolio-button-list{
     display: flex;
-    align-items:baseline;
     flex-direction: row;
     justify-content: center;
     gap: 8px;
+    align-items: baseline;
+}
+.portfolio-button{
+    border:0;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 .indent{
     margin-bottom: 50px;
@@ -362,4 +385,5 @@ text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    flex-basis: calc((100% - 60px) / 3);
 }
