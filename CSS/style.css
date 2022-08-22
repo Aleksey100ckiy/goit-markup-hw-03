@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 :root{
     --text-colour:#757575;
     --titles-colour:#212121;
@@ -137,20 +138,23 @@ color:var(--logo-button-color);
     /* margin-right: auto;
     margin-left: auto; */;
 }
-.tasks{
+.benefits-card{
+    width: calc( ( 100% - 90px ) / 4);
+}
+/* .tasks{
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-right: auto;
     margin-left: auto;
     flex-direction: row;
-}
+} */
 .members{
     display: flex;
     flex-direction: row;
 }
 .member-card{
-    width: calc((100%-90px)/4);
+    width: calc( (100% - 90px ) / 4);
     margin-right: 30px;
     border: 1px solid color var(--text-colour);
     background-color: var(--header-bcg-color);
@@ -169,7 +173,7 @@ margin-right: 0;
     margin-right: 0;
 }
 .engaged-element{
-    width: calc((100%-90px)/3);
+    width: calc( (100% - 60px ) / 3);
     margin-right: 30px;
 }
 .name-members-list{
@@ -388,7 +392,7 @@ margin-bottom: 9px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 30px;
+    gap: 30px;
     /* gap:30px; */
 }
 .product-card{
@@ -396,14 +400,20 @@ margin-bottom: 9px;
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgba(238, 238, 238, 1);
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgba(238, 238, 238, 1);
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color:rgba(238, 238, 238, 1);
+    
 }
 .flex-element{
-    width: calc((100%-60px)/3);
-    margin-right: 30px;
+    width: calc( (100% - 60px) / 3);
 }
-.flex-element:nth-child(3n) {
+.flex-element:nth-child(3n){
     margin-right: 0;
 }
